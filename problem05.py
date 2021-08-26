@@ -40,12 +40,11 @@ for num0 in range(1,end+1):
 			
 	so = []
 
-print()
 res = 1
 for i in range(1,end+1):
 	if result[i]!=0:
 		res *= i**result[i]
-		print(i,result[i])
+		#print(i,result[i])
 print(res)
 
 
