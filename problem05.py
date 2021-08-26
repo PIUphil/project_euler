@@ -2,6 +2,9 @@
 # 그러면 1 ~ 20 사이의 어떤 수로도 나누어 떨어지는 가장 작은 수는 얼마입니까?
 
 # LCM 구하기
+# 1. 소인수분해하고 딕셔너리로 개수 저장하기 (p.03)
+# 2. 최종 딕셔너리와 비교하여 value가 높은것으로 바꾸기
+# 3. key * value 하고 모두 합치기
 
 
 def div(num):
@@ -46,4 +49,25 @@ for i in range(1,end+1):
 print(res)
 
 
+
 # math.lcm(range(1,21))
+
+
+"""
+num = 232792550
+
+while True:
+	check = False
+	for i in range(2,21):
+		if num%i!=0:
+			break
+		elif i==20:
+			print(num)
+			check = True
+			break
+			
+	num += 1
+	
+	if check==True:
+		break		
+"""
