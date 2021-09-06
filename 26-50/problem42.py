@@ -18,10 +18,14 @@ for n in range(1,20):
 f = open('words.txt', 'r')      # 파일 열기 
 li = []
 
-for i in f:
-    i=i.replace('"','')
+#for i in f:
+#    i=i.replace('"','')
     
-li = i.split(",")
+#li = i.split(",")
+
+line=f.readline()
+line = line.replace('"','')
+li=line.split(',')
 
 f.close()                       # 파일 닫기
 
