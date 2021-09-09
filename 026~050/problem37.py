@@ -22,13 +22,13 @@ while True:
         num = str(num)
 
         li = [num]
-        for i in range(len(num)-1):         # 왼쪽없애기
+        for i in range(len(num)-1):         # 왼쪽부터 없애기
             li.append(num[i+1:])
-        for j in range(len(num)-1):
+        for j in range(len(num)-1):         # 오른쪽부터 없애기
             li.append(num[:len(num)-j-1])
 
         tmp = []
-        for j in li:
+        for j in li:			    # 소수 확인
             tmp.append(isPrime(int(j)))
 
         if False not in tmp:
