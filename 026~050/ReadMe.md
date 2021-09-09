@@ -1,3 +1,6 @@
+from sympy import isprime　　　# pip install sympy  
+from itertools import permutations  
+<br>  
 |번호|　　　　　　　　　　　　문　　제|특 징|
 |:---:|:---|:---|
 |26|1000 이하의d중에서 1/d이 가장 긴 순환마디를 갖는 수는?||
